@@ -22,7 +22,7 @@ start-pulseaudio-x11
 while true; do
     rm -rf ~/.{config,cache}/chromium/
     # chromium-browser --kiosk --no-first-run  --force-device-scale-factor=1.25 'https://www.youtube.com/embed/5FqH02gN29o?autoplay=1&loop=1&playlist=5FqH02gN29o'
-    chromium-browser --kiosk --no-first-run  --force-device-scale-factor=3 'http://publish.smartsheet.com/f79b8aa62f3147549b51906cf0f0cd70'
+    chromium-browser --kiosk --no-first-run  --force-device-scale-factor=3 'http://pktck.github.io/ccc-kiosk/'
 done
 EOF
 
