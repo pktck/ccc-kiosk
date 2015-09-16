@@ -44,7 +44,7 @@ echo manual | sudo tee /etc/init/lightdm.override  # disable desktop
 
 # set up SSH keys
 ssh-keygen -t rsa -f ~/.ssh/id_rsa -N ""
-sudo install -b -m 755 /dev/stdin /home/$USER/.ssh/authoried_keys << EOF
+sudo install -b -m 755 /dev/stdin /home/$USER/.ssh/authorized_keys << EOF
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC7bjcfbTD9aR78rFCSu9K0K+PSuR68UFNyWTHvfkWbFZ0y21o0XcAMMrNgOMhi4u++jIFGaD0Vb0BJiNjocjv3Vzy1ghxCsBAe21ktGhrBN3jGCpQ7f6h8XWGwNBYqIJEkGmQVfqgShAGsmseaxKVD+QNAX2CqKh/UAqUDwfjvkbafS8nu9I1mM74j7cdluENyyUG82W87kj3mNrRaGQuNal9xRxE0abhIkYdkOfjDKL1gR2ZADo25b1gAZVuqhJN/gP3I6QMEXQxoacJ42+d8sxsZJh/wCQnFrydqpY4ef4FYU+enb5o6ZgAXasF7rSSxcfZ2K6TPU0A4o8yvyZK9 pktck@everywhere
 EOF
 
