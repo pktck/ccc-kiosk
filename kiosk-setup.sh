@@ -5,10 +5,12 @@ USER="pktck"
 #TODO: script adding the following line to /etc/sudoers
 # %sudo   ALL=(ALL:ALL) NOPASSWD: ALL
 
+#TODO: enable SSH keys
+
 sudo sed -i 's/%sudo   ALL=(ALL:ALL) ALL/%sudo   ALL=(ALL:ALL) NOPASSWD: ALL/' /etc/X11/Xwrapper.config
 
 sudo apt update -y
-sudo apt install -y --no-install-recommends openbox pulseaudio openssh-server vim
+sudo apt install -y --no-install-recommends openbox pulseaudio unclutter openssh-server vim tmux
 sudo usermod -a -G audio $USER
 
 sudo install -b -m 755 /dev/stdin /opt/kiosk.sh << EOF
