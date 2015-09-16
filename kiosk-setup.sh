@@ -49,6 +49,6 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC7bjcfbTD9aR78rFCSu9K0K+PSuR68UFNyWTHvfkWb
 EOF
 
 chmod 700 ~/.ssh
-chmod 644 ~/.ssh/authorized_keys
+sudo chmod 644 ~/.ssh/authorized_keys
 
 sudo reboot
