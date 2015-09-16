@@ -7,7 +7,7 @@ USER="pktck"
 
 #TODO: enable SSH keys
 
-sudo sed -i 's/%sudo   ALL=(ALL:ALL) ALL/%sudo   ALL=(ALL:ALL) NOPASSWD: ALL/' /etc/X11/Xwrapper.config
+sudo sed -i 's/%sudo   ALL=(ALL:ALL) ALL/%sudo   ALL=(ALL:ALL) NOPASSWD: ALL/' /etc/sudoers
 
 sudo apt update -y
 sudo apt install -y --no-install-recommends openbox pulseaudio unclutter openssh-server vim tmux
